@@ -8,11 +8,18 @@ import java.util.List;
 @Service
 public class CategoryServiceImpl implements CategoryService {
 
+    private static Integer iDNumber = 0;
+
     List<Category> categories = new ArrayList<>();
 
     @Override
     public List<Category> getCategories() {
         return categories;
+    }
+
+    public String generateCategoryId(Category category) {
+        iDNumber++;
+        return category.getCategoryName().concat(iDNumber.toString());
     }
 
     @Override
