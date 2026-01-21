@@ -2,15 +2,16 @@ package com.udemy.sbecom.model;
 
 public class Category {
 
-    private long categoryId;
+    private Long categoryId;
     private String categoryName;
 
     public Category() {}
 
-    public Category(long categoryId, String categoryName) {
-        this.categoryId = categoryId;
+    public Category(Long categoryId, String categoryName) {
         this.categoryName = categoryName;
+        this.categoryId = categoryId;
     }
+
 
     public long getCategoryId() {
         return categoryId;
