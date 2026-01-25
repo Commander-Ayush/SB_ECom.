@@ -13,7 +13,7 @@ public class Category {
     }
 
 
-    public long getCategoryId() {
+    public Long getCategoryId() {
         return categoryId;
     }
 
