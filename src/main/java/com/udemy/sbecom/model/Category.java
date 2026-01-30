@@ -12,7 +12,6 @@ public class Category {
         this.categoryId = categoryId;
     }
 
-
     public Long getCategoryId() {
         return categoryId;
     }
